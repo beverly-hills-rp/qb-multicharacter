@@ -39,9 +39,9 @@ end
 local function openCharMenu(bool)
     QBCore.Functions.TriggerCallback("qb-multicharacter:server:GetNumberOfCharacters", function(result)
         local translations = {}
-        for k in pairs(Lang.fallback and Lang.fallback.phrases or Lang.phrases) do
+        for k in pairs(Messages.fallback and Messages.fallback.phrases or Messages.phrases) do
             if k:sub(0, ('ui.'):len()) then
-                translations[k:sub(('ui.'):len() + 1)] = Lang:t(k)
+                translations[k:sub(('ui.'):len() + 1)] = Messages:t(k)
             end
         end
         SetNuiFocus(bool, bool)
@@ -211,9 +211,9 @@ end)
 RegisterNUICallback('createNewCharacter', function(data, cb)
     local cData = data
     DoScreenFadeOut(150)
-    if cData.gender == Lang:t("ui.male") then
+    if cData.gender == Messages:t("ui.male") then
         cData.gender = 0
-    elseif cData.gender == Lang:t("ui.female") then
+    elseif cData.gender == Messages:t("ui.female") then
         cData.gender = 1
     end
     TriggerServerEvent('qb-multicharacter:server:createCharacter', cData)

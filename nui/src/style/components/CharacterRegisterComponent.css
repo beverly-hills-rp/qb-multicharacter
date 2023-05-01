@@ -1,0 +1,201 @@
+.character-register-container {
+    position: absolute;
+    z-index: 222;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    top: 0;
+    left: 0;
+}
+
+.character-register-container .modal {
+    display: flex;
+    flex-direction: column;
+
+    width: 24vw;
+
+    padding: 30px;
+
+    border-radius: 0.15rem;
+
+    background-color: rgba(22, 25, 35, 0.95);
+    box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
+
+    transition: 400ms;
+
+    font-family: "Open Sans", sans-serif;
+}
+
+.characters-register-block-header {
+    display: flex;
+    flex: 1 1 0;
+
+    width: 100%;
+
+    justify-content: space-between;
+}
+
+.characters-register-block-header p {
+    width: 100%;
+
+    text-transform: uppercase;
+    color: #ededed;
+    text-align: left;
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+#close-reg {
+    font-size: 1rem;
+    right: 0px;
+    cursor: pointer;
+}
+
+.character-reg-btn {
+    height: 4vh;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.character-reg-btn > p {
+    text-align: center;
+    line-height: 4vh;
+    color: #ededed;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    font-size: 2vh;
+    font-weight: 900;
+}
+
+.char-register-inputs {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    width: 100%;
+
+    row-gap: 10px;
+    margin: 10px 0 0 0 !important;
+}
+
+.material-symbols-outlined {
+    color: #ededed;
+    background-color: #dc143c;
+    font-weight: 900;
+    border-radius: 0.3vh;
+    padding: 0.3vh;
+}
+
+.v-input--is-disabled.v-text-field .v-input__control .v-input__slot,
+.v-input--is-disabled.v-text-field .v-input__control input[role="button"],
+.character-delete > p {
+    cursor: default !important;
+}
+
+.v-input .v-input__control .v-field {
+    padding: 0;
+}
+
+.v-input .v-input__control .v-field input,
+.v-input .v-input__control .v-field input.v-field__input {
+    padding: 0.5rem 1rem !important;
+}
+
+.v-input .v-input__control .v-field .v-field__append-inner {
+    display: none;
+}
+
+.v-input .v-input__control .v-field .v-field__field,
+.v-input .v-input__control .v-field .v-field__input {
+    margin: 0.15rem 0 0 0;
+    padding: 0;
+}
+
+.v-input,
+.v-input input,
+.v-input,
+.v-input input::placeholder,
+.v-list-item__title,
+.v-select__selection.v-select__selection--comma {
+    color: white !important;
+}
+
+input[type="date"] {
+    color: #ededed;
+    text-align: center;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="date"]::-webkit-input-placeholder {
+    visibility: hidden !important;
+}
+
+input[type="date"]::-webkit-clear-button {
+    display: none;
+}
+
+.v-date-picker-table .v-btn--active {
+    background: #dc143c;
+}
+
+.theme--light.v-picker__body {
+    background: #161923f2 !important;
+}
+
+.v-picker__actions.v-card__actions {
+    background: rgb(24 29 41 / 95%) !important;
+}
+
+.v-picker__title.primary {
+    background: #dc143c !important;
+}
+
+.theme--light.v-date-picker-header
+    .v-date-picker-header__value:not(.v-date-picker-header__value--disabled)
+    button:not(:hover):not(:focus) {
+    color: white !important;
+}
+
+.v-date-picker-table .v-btn__content,
+.v-picker__actions .v-btn__content,
+.theme--light.v-date-picker-table .v-date-picker-table--date__week,
+.theme--light.v-date-picker-table th,
+.v-date-picker-header__value button,
+.v-date-picker-header__value button:hover,
+.v-date-picker-years li {
+    color: white !important;
+}
+
+button.v-btn.v-date-picker-table__current.v-btn--rounded.v-btn--outlined.theme--light.accent--text {
+    border-color: #dc143c;
+}
+
+.v-date-picker-years {
+    overflow: scroll !important;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.v-date-picker-years::-webkit-scrollbar {
+    display: none;
+}
+
+.v-field__loader {
+    display: none !important;
+}

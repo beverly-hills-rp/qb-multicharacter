@@ -1,0 +1,224 @@
+.character-list {
+    display: flex;
+
+    flex-direction: column;
+
+    width: 26rem;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.75);
+    box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
+    transition: 400ms;
+
+    align-items: center;
+}
+
+.character-list .header {
+    display: flex;
+    flex: 0 1;
+
+    width: 100%;
+
+    padding: 2rem 0;
+
+    align-items: center;
+    justify-content: center;
+
+    text-transform: uppercase;
+}
+
+.character-list .header > p {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 800;
+    letter-spacing: 0.05rem;
+    color: #ededed;
+}
+
+.character-list .list {
+    display: flex;
+    flex: 1 1;
+
+    flex-direction: column;
+
+    width: 100%;
+
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+}
+
+.character-list .list::-webkit-scrollbar {
+    display: none;
+}
+
+.character-list .list::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.character-list .item {
+    position: relative;
+    display: flex;
+
+    width: 100%;
+    height: 5rem;
+
+    padding: 0 1rem;
+
+    align-items: center;
+    justify-content: space-between;
+
+    cursor: pointer;
+
+    transition: 0.1s linear;
+
+    font-family: "Open Sans", sans-serif;
+}
+
+.character-list .item:hover {
+    background-color: rgba(169, 13, 44, 0.65);
+}
+
+.character-list .item > span {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #ededed;
+    text-transform: uppercase;
+}
+
+.character-list .item .cid {
+    text-align: right;
+}
+
+.character-list .item.selected {
+    background-color: rgba(169, 13, 44, 0.65);
+    transition: 250ms;
+}
+
+.character-list .buttons {
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
+
+    width: 100%;
+
+    justify-content: end;
+
+    margin: auto auto 5rem auto;
+    padding: 0 2rem;
+}
+
+.character-list .buttons .btn {
+    width: 100%;
+    height: 2rem;
+
+    transition: 0.2s;
+    margin-top: 10px;
+    cursor: pointer;
+
+    border-radius: 0.1rem;
+    transition: all 0.2s ease;
+}
+
+.character-list .buttons .btn span {
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 0.85rem !important;
+    font-weight: 600 !important;
+
+    text-transform: uppercase;
+}
+
+.character-list .buttons .btn.play {
+    background-color: rgb(47 134 67);
+}
+
+.character-list .buttons .btn.delete {
+    background-color: rgb(144 41 62);
+}
+
+.character-list .buttons .btn:hover {
+    box-shadow: rgb(17 17 37 / 25%) 0px 30px 60px -12px inset,
+        rgb(54 80 154 / 30%) 0px 18px 36px -18px;
+}
+
+/* 4K */
+@media (min-width: 3840px) and (min-height: 2160px) {
+    /* .character-list {
+        width: 52rem;
+
+        box-shadow: rgb(0 0 0 / 16%) 0px 9px 18px, rgb(0 0 0 / 23%) 0px 9px 18px;
+    }
+
+    .character-list .header {
+        padding: 6rem 0;
+    }
+
+    .character-list .header > p {
+        font-size: 3.75rem;
+        letter-spacing: 0.15rem;
+    }
+
+    .character-list .item {
+        height: 15rem;
+
+        padding: 0 3rem;
+    }
+
+    .character-list .item > span {
+        font-size: 2.55rem;
+    }
+
+    .character-list .buttons {
+        margin: auto auto 10rem auto;
+        padding: 0 6rem;
+    }
+
+    .character-list .buttons .btn {
+        height: 6rem;
+
+        margin-top: 30px;
+
+        border-radius: 0.3rem;
+    }
+
+    .character-list .buttons .btn span {
+        font-size: 2.55rem !important;
+    } */
+}
+
+/* HD */
+@media (min-width: 1366px) and (min-height: 768px) {
+    /* CSS rules for HD resolution */
+}
+
+/* HD+ */
+@media (min-width: 1600px) and (min-height: 900px) {
+    /* CSS rules for HD+ resolution */
+}
+
+/* QHD */
+@media (min-width: 2560px) and (min-height: 1440px) {
+    /* CSS rules for QHD resolution */
+}
+
+/* SXGA */
+@media (min-width: 1280px) and (min-height: 1024px) {
+    /* CSS rules for SXGA resolution */
+}
+
+/* WQHD */
+@media (min-width: 3440px) and (min-height: 1440px) {
+    /* CSS rules for WQHD resolution */
+}
+
+/* WUXGA */
+@media (min-width: 1920px) and (min-height: 1200px) {
+    /* CSS rules for WUXGA resolution */
+}
+
+/* XGA */
+@media (min-width: 1024px) and (min-height: 768px) {
+    /* CSS rules for XGA resolution */
+}
